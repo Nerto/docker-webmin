@@ -1,6 +1,5 @@
 # Use the latest Ubuntu image as a parent
 FROM ubuntu:focal
-MAINTAINER "Johan Pienaar" <johan@pienaarfamilie.nl>
 
 ENV DEBIAN_FRONTEND=noninteractive TZ=Europe/Amsterdam
 
@@ -39,3 +38,5 @@ RUN echo "#! /bin/bash" > entrypoint.sh && \
     chmod 755 entrypoint.sh
 
 CMD /home/entrypoint.sh
+
+run apt install openssh
