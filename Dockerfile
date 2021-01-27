@@ -39,4 +39,4 @@ RUN echo "#! /bin/bash" > entrypoint.sh && \
 
 CMD /home/entrypoint.sh
 
-run apt install openssh
+run apt install openssh-server
